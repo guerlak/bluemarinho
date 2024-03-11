@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+
+import { FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
 
         <p className="my-7">Apesar do setlist composto por acordes e notas familiares, os Blue Marinho passam longe de uma atuação cover.
           Eles reinventam e reinjetam energia em cada faixa, com arranjos próprios que surpreendem o público.
-          Imagine Nina Simone, Beatles e Stevie Wonder fundindo-se em uma sinfonia de rock 'n roll envolvente.
+          Imagine Nina Simone, Beatles e Stevie Wonder fundindo-se em uma sinfonia de rock n roll envolvente.
         </p>
 
         <p className="my-7">
@@ -33,7 +33,7 @@ export default function Home() {
 
         <p className="my-7">Para mais informações, entre em contato com:</p>
 
-        <p className="my-2">Siga-nos nas redes sociais:</p>
+        <p className="my-7">Siga-nos nas redes sociais:</p>
         <div className="flex">
           <a href="https://www.youtube.com/@BlueMarinho" target="_blank" rel="noopener noreferrer" className="p-2"><FaYoutube size={40} /></a>
           <a href="https://www.instagram.com/bandabluemarinho/" target="_blank" rel="noopener noreferrer" className="p-2"> <FaInstagram size={40} /></a>
