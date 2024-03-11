@@ -48,8 +48,8 @@ export default function Home() {
       <q><strong>Prepare-se para uma viagem musical com os Blue Marinho. O rock nunca soou tão autêntico</strong>.</q>
 
       <div className="flex justify-center my-10 b-1">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/kd57l2z8Pz8?si=nXMj9Ox2HBOpHBaU" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kd57l2z8Pz8?si=nXMj9Ox2HBOpHBaU" title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
       </div>
 
     </main>
