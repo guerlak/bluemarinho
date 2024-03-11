@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="p-10 lg:px-60">
 
-      <h1 className="font-bold">BLUE MARINHO</h1>
+      <h1 className="font-bold">BLUE MARINHO</h1><small>release</small>
 
       <p className="my-7">Ecoando Clássicos com Originalidade: a Banda Blue Marinho oferece uma experiência única para os amantes do rock.
         Chega à cena carioca os Blue Marinho, um quinteto composto pela voz poderosa e envolvente de Paola Marinho e
