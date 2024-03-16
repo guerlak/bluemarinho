@@ -21,7 +21,7 @@ function Galeria() {
 
                 {pics.map((p, i) => (
                     <button className="p-2">
-                        <Image className="rounded-md" src={pics[i]} alt="" width={400} height={500} />
+                        <Image className="rounded-md" src={pics[i]} key={i} alt="Fotos de estudio por Pedro Colo" width={400} height={500} />
                     </button>
 
                 ))}
