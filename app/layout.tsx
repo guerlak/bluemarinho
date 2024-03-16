@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Rock_Salt, Inter } from "next/font/google";
 import "./globals.css";
 
+const rock = Rock_Salt({ weight: "400", subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Blue Marinho",
-  description: "",
+  description: "Banda Blue Marinho - O Rock nunca soou tão autentico.",
 };
 
 export default function RootLayout({
@@ -16,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <body className={inter.className}>
+        {children}
+      </body>
+    </html >
   );
 }
