@@ -19,8 +19,8 @@ function Galeria() {
 
             <div className="flex flex-wrap justify-center">
 
-                {pics.map((p, i) => (
-                    <button className="p-2">
+                {pics.map((p, i: any) => (
+                    <button className="p-2" key={i}>
                         <Image className="rounded-md" src={pics[i]} key={i} alt="Fotos de estudio por Pedro Colo" width={400} height={500} />
                     </button>
 
