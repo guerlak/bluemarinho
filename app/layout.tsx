@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Rock_Salt, Inter } from "next/font/google";
 import "./globals.css";
 
-const rock = Rock_Salt({ weight: "400", subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <body className={inter.className}>
         {children}
       </body>

@@ -1,5 +1,6 @@
 
-import { FaInstagram, FaYoutube } from "react-icons/fa";
+import SocialIcons from "@/app/components/SocialIcons";
+
 
 export default function release() {
   return (
@@ -46,10 +47,7 @@ export default function release() {
       <br />
 
       <p className="my-1">Siga-nos nas redes sociais:</p>
-      <div className="flex">
-        <a href="https://www.youtube.com/@BlueMarinho" target="_blank" rel="noopener noreferrer" className="p-2"><FaYoutube size={40} /></a>
-        <a href="https://www.instagram.com/bandabluemarinho/" target="_blank" rel="noopener noreferrer" className="p-2"> <FaInstagram size={40} /></a>
-      </div>
+      <SocialIcons size={40} />
       <br />
 
       <q><strong>Prepare-se para uma viagem musical com os Blue Marinho. O rock nunca soou tão autêntico</strong>.</q>
