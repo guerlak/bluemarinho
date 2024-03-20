@@ -1,6 +1,6 @@
 import { Rock_Salt } from "next/font/google";
 import Link from "next/link";
-import { FaArrowRight, FaMusic } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 
 const rock = Rock_Salt({ weight: "400", subsets: ["latin"] });
 
@@ -12,7 +12,7 @@ export default function Home() {
           <span className="px-2 ">SITE EM CONSTRUÇÃO</span>
         </h1>
         <p className="text-1xl">
-          Em muito breve, você vai conferir agenda de shows, videos e informações da banda por aqui...
+          Em breve você vai conferir agenda de shows, videos e informações da banda por aqui...
         </p>
         <br />
         <div className="flex items-center float-end hover:opacity-40 text-lg">

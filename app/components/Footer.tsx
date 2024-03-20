@@ -3,7 +3,7 @@ import SocialIcons from "./SocialIcons";
 export default function Footer() {
 
   return (
-    <div className="flex justify-between items-center p-10 h-40 bg-gray-700 text-gray-200">
+    <div className="flex justify-between items-center p-10 h-40 text-gray-200">
       <div>Blue Marinho®</div>
       <div>
         <div></div>
