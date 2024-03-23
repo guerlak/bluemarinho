@@ -12,11 +12,15 @@ export default function Home() {
           <span className="px-2 ">SITE EM CONSTRUÇÃO</span>
         </h1>
         <p className="text-1xl">
-          Em breve você vai conferir agenda de shows, videos e informações da banda por aqui...
+          Em breve você vai conferir agenda de shows, videos e informações da
+          banda por aqui...
         </p>
         <br />
         <div className="flex items-center float-end hover:opacity-40 text-lg">
-          <Link href="/release" className="px-2">release</Link><FaArrowRight />
+          <Link href="/release" className="px-2">
+            release
+          </Link>
+          <FaArrowRight />
         </div>
       </div>
     </div>
