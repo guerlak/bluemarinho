@@ -1,15 +1,18 @@
 import SocialIcons from "@/app/components/SocialIcons";
+import Link from "next/link";
+import { FaArrowCircleLeft } from "react-icons/fa";
+import { FaArrowLeft } from "react-icons/fa6";
 
 export default function release() {
   return (
-    <>
+    <div className="p-6">
       <h1 className="font-bold">BLUE MARINHO</h1>
       <small>release</small>
 
-      <h1 className="my-7 font-bold">
+      <h3 className="my-7 font-bold">
         Ecoando Clássicos com Originalidade: a Banda Blue Marinho oferece uma
         experiência única para os amantes do rock.
-      </h1>
+      </h3>
 
       <p className="my-7">
         Chega à cena carioca os Blue Marinho, um quinteto composto pela voz
@@ -71,6 +74,12 @@ export default function release() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>
       </div>
-    </>
+
+      <div className="flex justify-center mt-10 text-slate-500">
+        <Link href={"/"}>
+          <FaArrowLeft size={30} />
+        </Link>
+      </div>
+    </div>
   );
 }

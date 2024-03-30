@@ -1,11 +1,8 @@
 import { Rock_Salt } from "next/font/google";
-import Image from "next/image";
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
 import fs from "fs";
 import Footer from "./components/Footer";
 import Agenda from "./components/Agenda";
-import { url } from "inspector";
+import SocialIcons from "./components/SocialIcons";
 
 const rock = Rock_Salt({ weight: "400", subsets: ["latin"] });
 
@@ -22,8 +19,9 @@ export default function Home() {
   return (
     <div className="text-center flex-col [&>*]:mb-14">
       <header className="flex flex-col justify-around w-full h-[300px] sm:h-[500px]">
-        <div className="flex justify-center items-center min-h-20">
+        <div className="flex justify-between items-center min-h-20 px-4">
           <h1>Blue Marinho</h1>
+          <SocialIcons size={30} />
         </div>
 
         <div

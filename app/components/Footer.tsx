@@ -11,8 +11,10 @@ export default function Footer() {
         </span>
       </div>
 
-      <div className="flex p-2 no-underline items-center text-slate-500">
-        <Link href={"/release"}>release</Link>
+      <div className="flex mt-6 no-underline items-center text-slate-500">
+        <Link href={"/release"}>
+          <span className="mr-1">release</span>
+        </Link>
         <FaArrowRight />
       </div>
     </div>
