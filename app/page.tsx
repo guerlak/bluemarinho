@@ -38,19 +38,10 @@ export default function Home() {
 
       <div className="min-h-96 flex flex-wrap w-full [&>*]:p-4">
         <iframe
-          width="50%"
+          width="100%"
           height="auto"
           src="https://www.youtube.com/embed/kd57l2z8Pz8?si=nXMj9Ox2HBOpHBaU"
           title="Video Youtube Blue Marinho"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerPolicy="strict-origin-when-cross-origin"
-          allowFullScreen
-        ></iframe>
-        <iframe
-          width="50%"
-          height="auto"
-          src="https://www.youtube.com/embed/7CZE-nETrN8?si=mWYUMfJ48zsE_X56"
-          title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
