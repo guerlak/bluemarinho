@@ -1,12 +1,19 @@
-import SocialIcons from "./SocialIcons";
+import Link from "next/link";
+import { FaArrowRight, FaRegRegistered } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <div className="flex justify-between items-center p-10 h-40 text-gray-200">
-      <div>Blue Marinho®</div>
-      <div>
-        <div></div>
-        <SocialIcons size={30} />
+    <div className="w-full flex flex-col justify-center items-center pt-10">
+      <div className="flex items-center">
+        <h1>Blue Marinho</h1>
+        <span className="ml-2">
+          <FaRegRegistered />
+        </span>
+      </div>
+
+      <div className="flex p-2 no-underline items-center text-slate-500">
+        <Link href={"/release"}>release</Link>
+        <FaArrowRight />
       </div>
     </div>
   );

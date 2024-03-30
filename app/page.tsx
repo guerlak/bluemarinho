@@ -1,28 +1,70 @@
 import { Rock_Salt } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import fs from "fs";
+import Footer from "./components/Footer";
+import Agenda from "./components/Agenda";
+import { url } from "inspector";
 
 const rock = Rock_Salt({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
+  const imgFolder = "./public/pictures/home";
+  const pics: any = [];
+
+  fs.readdirSync(imgFolder).forEach((file) => {
+    pics.push("/pictures/home/" + file);
+  });
+
+  const selectedPic = Math.floor(Math.random() * pics.length);
+
   return (
-    <div className="bg-no-repeat bg-cover bg-center bg-[url('/galeria/guitars.jpeg')] flex justify-center items-center  h-screen">
-      <div className="bg-gray-800 rounded-tr-lg sm:w-2/4 w-4/5 p-10 opacity-70 text-gray-100 text-center">
-        <h1 className="mb-10 flex items-center justify-center text-2xl">
-          <span className="px-2 ">SITE EM CONSTRUÇÃO</span>
-        </h1>
-        <p className="text-1xl">
-          Em breve você vai conferir agenda de shows, videos e informações da
-          banda por aqui...
-        </p>
-        <br />
-        <div className="flex items-center float-end hover:opacity-40 text-lg">
-          <Link href="/release" className="px-2">
-            release
-          </Link>
-          <FaArrowRight />
+    <div className="text-center flex-col [&>*]:mb-14">
+      <header className="flex flex-col justify-around w-full h-[300px] sm:h-[500px]">
+        <div className="flex justify-center items-center min-h-20">
+          <h1>Blue Marinho</h1>
         </div>
+
+        <div
+          style={{ backgroundImage: `url(${pics[selectedPic]})` }}
+          className="w-full h-[300px] sm:h-[500px] bg-cover bg-center bg-no-repeat"
+        ></div>
+      </header>
+
+      <h2>
+        Blue Marinho, um quinteto composto pela voz poderosa e envolvente de
+        Paola Marinho e uma banda potente que apresenta uma rica mistura de
+        releituras de clássicos do rock e blues.
+      </h2>
+
+      <div className="min-h-96 flex flex-wrap w-full [&>*]:p-4">
+        <iframe
+          width="50%"
+          height="auto"
+          src="https://www.youtube.com/embed/kd57l2z8Pz8?si=nXMj9Ox2HBOpHBaU"
+          title="Video Youtube Blue Marinho"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+        <iframe
+          width="50%"
+          height="auto"
+          src="https://www.youtube.com/embed/7CZE-nETrN8?si=mWYUMfJ48zsE_X56"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
+
+      <div className="flex-col">
+        <h1 className="p-4 ">Proximos Shows</h1>
+        <Agenda />
+      </div>
+
+      <Footer />
     </div>
   );
 }
