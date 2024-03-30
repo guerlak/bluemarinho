@@ -8,7 +8,7 @@ const rock = Rock_Salt({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
   const imgFolder = "./public/pictures/home";
-  const pics: any = [];
+  const pics: string[] = [];
 
   fs.readdirSync(imgFolder).forEach((file) => {
     pics.push("/pictures/home/" + file);
@@ -30,7 +30,7 @@ export default function Home() {
         ></div>
       </header>
 
-      <h2>
+      <h2 className="px-8">
         Blue Marinho, um quinteto composto pela voz poderosa e envolvente de
         Paola Marinho e uma banda potente que apresenta uma rica mistura de
         releituras de clássicos do rock e blues.
