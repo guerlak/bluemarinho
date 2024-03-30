@@ -1,13 +1,14 @@
 import SocialIcons from "@/app/components/SocialIcons";
 import Link from "next/link";
+import Image from "next/image";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 
 export default function release() {
   return (
-    <div className="p-6">
-      <h1 className="font-bold">BLUE MARINHO</h1>
-      <small>release</small>
+    <div className="p-6 sm:px-32 ">
+      <h1 className="font-bold self-start">BLUE MARINHO</h1>
+      <small className="self-start">release</small>
 
       <h3 className="my-7 font-bold">
         Ecoando Clássicos com Originalidade: a Banda Blue Marinho oferece uma
@@ -20,6 +21,15 @@ export default function release() {
         uma rica mistura de releituras de clássicos do rock e blues dos anos 70
         e 80.
       </p>
+
+      <div className="flex justify-center">
+        <Image
+          src="/pictures/galeria/foto-release.jpg"
+          width={500}
+          height={500}
+          alt="foto banda"
+        />
+      </div>
 
       <p className="my-7">
         Apesar do setlist composto por acordes e notas familiares, os Blue
@@ -46,10 +56,12 @@ export default function release() {
         testemunhar esse show de rock cheio de personalidade.
       </p>
 
-      <p className="py-1">Shows e mais informações, entre em contato com:</p>
-      <p>Filipe: (21) 98844-4059</p>
-      <p>Mari: (21) 99744-8621</p>
-      <p>bandabluemarinho@gmail.com</p>
+      <div className="flex-start">
+        <p className="py-1">Shows e mais informações, entre em contato com:</p>
+        <p>Filipe: (21) 98844-4059</p>
+        <p>Mari: (21) 99744-8621</p>
+        <p>bandabluemarinho@gmail.com</p>
+      </div>
 
       <br />
 
@@ -72,6 +84,7 @@ export default function release() {
           src="https://www.youtube.com/embed/kd57l2z8Pz8?si=nXMj9Ox2HBOpHBaU"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
         ></iframe>
       </div>
 
