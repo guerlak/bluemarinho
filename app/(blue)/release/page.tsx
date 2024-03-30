@@ -1,12 +1,11 @@
 import SocialIcons from "@/app/components/SocialIcons";
 import Link from "next/link";
 import Image from "next/image";
-import { FaArrowCircleLeft } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 
 export default function release() {
   return (
-    <div className="p-6 sm:px-32 ">
+    <div className="p-6 sm:px-46 ">
       <h1 className="font-bold self-start">BLUE MARINHO</h1>
       <small className="self-start">release</small>
 
