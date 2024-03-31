@@ -1,9 +1,11 @@
+import Evento from "../components/Evento";
+
 function Agenda() {
   return (
     <>
-      <h2>Evento Privado, RJ - 04/04</h2>
-      <h2>Evento Privado, RJ - 19/04</h2>
-      <h2>Evento Privado, RJ - 26/04</h2>
+      <Evento local="RJ" nome="Evento Privado" data={"04/04/2024"} />
+      <Evento local="RJ" nome="Evento Privado" data={"16/04/2024"} />
+      <Evento local="RJ" nome="Evento Privado" data={"21/04/2024"} />
     </>
   );
 }

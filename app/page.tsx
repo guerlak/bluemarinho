@@ -17,7 +17,7 @@ export default function Home() {
   const selectedPic = Math.floor(Math.random() * pics.length);
 
   return (
-    <div className="text-center flex-col [&>*]:mb-14">
+    <div className="mx-auto text-center flex-col items-center justify-center [&>*]:mb-14 max-w-[1200px]">
       <header className="flex flex-col justify-around w-full h-[300px] sm:h-[500px]">
         <div className="flex justify-between items-center min-h-20 px-4">
           <h1>Blue Marinho</h1>
@@ -58,7 +58,7 @@ export default function Home() {
         ></iframe>
       </div>
 
-      <div className="flex-col">
+      <div>
         <br />
         <h1 className="p-4 ">PRÓXIMOS SHOWS</h1>
         <Agenda />

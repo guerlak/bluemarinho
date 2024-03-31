@@ -5,7 +5,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 
 export default function release() {
   return (
-    <div className="p-6 sm:px-46 ">
+    <div className="p-6 max-w-[1000px] mx-auto">
       <h1 className="font-bold self-start">BLUE MARINHO</h1>
       <small className="self-start">release</small>
 
