@@ -3,6 +3,8 @@ import fs from "fs";
 import Footer from "./components/Footer";
 import Agenda from "./components/Agenda";
 import SocialIcons from "./components/SocialIcons";
+import Link from "next/link";
+import { FaArrowRight } from "react-icons/fa6";
 
 const rock = Rock_Salt({ weight: "400", subsets: ["latin"] });
 
@@ -29,12 +31,20 @@ export default function Home() {
           className="w-full h-[300px] sm:h-[500px] bg-cover bg-center bg-no-repeat"
         ></div>
       </header>
-
       <h2 className="px-8">
         Blue Marinho, um quinteto composto pela voz poderosa e envolvente de
         Paola Marinho e uma banda potente que apresenta uma rica mistura de
         releituras de clássicos do rock e blues.
       </h2>
+
+      <div className="flex items-center justify-center text-2xl ">
+        <Link href={"/release"}>
+          <div className="flex hover:opacity-50 items-center">
+            <span className="mx-1 ">Ver release</span>
+            <FaArrowRight />
+          </div>
+        </Link>
+      </div>
 
       <div className="min-h-96 flex flex-wrap w-full [&>*]:p-4 justify-center">
         <iframe
@@ -57,13 +67,13 @@ export default function Home() {
           allowFullScreen
         ></iframe>
       </div>
-
       <div>
         <br />
-        <h1 className="p-4 ">PRÓXIMOS SHOWS</h1>
-        <Agenda />
+        <h1 className="p-4">PRÓXIMOS SHOWS</h1>
+        <div className="flex justify-center">
+          <Agenda />
+        </div>
       </div>
-
       <Footer />
     </div>
   );

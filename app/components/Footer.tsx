@@ -10,13 +10,6 @@ export default function Footer() {
           <FaRegRegistered />
         </span>
       </div>
-
-      <div className="flex mt-6 no-underline items-center text-slate-500">
-        <Link href={"/release"}>
-          <span className="mr-1">release</span>
-        </Link>
-        <FaArrowRight />
-      </div>
     </div>
   );
 }
