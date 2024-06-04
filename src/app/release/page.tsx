@@ -1,16 +1,15 @@
 import SocialIcons from "../../components/SocialIcons";
-import Link from "next/link";
 import Image from "next/image";
-import { FaArrowLeft } from "react-icons/fa6";
 import fotoRelease from "./foto-release.jpg";
 
 export default function release() {
   return (
     <div className="text-left px-10">
-      <h3 className="my-7 font-bold">
+      <h3 className="font-bold">
         Ecoando Clássicos com Originalidade: a Banda Blue Marinho oferece uma
         experiência única para os amantes do rock.
       </h3>
+      <small>release</small>
 
       <p className="my-7">
         Chega à cena carioca os Blue Marinho, um quinteto composto pela voz
@@ -19,11 +18,10 @@ export default function release() {
         e 80.
       </p>
 
-      <div className="flex gap-4 mt-4 mb-8">
-        <div className="flex flex-wrap">
-          <Image src={fotoRelease} width={500} height={500} alt="foto banda" />
-        </div>
-        <div className="w-[50%]">
+      <div className="flex flex-wrap gap-6 mt-4 mb-8">
+        <Image src={fotoRelease} width={500} height={500} alt="foto banda" />
+
+        <div className="sm:w-[50%]">
           <p>
             Apesar do setlist composto por acordes e notas familiares, os Blue
             Marinho passam longe de uma atuação cover. Eles reinventam e
