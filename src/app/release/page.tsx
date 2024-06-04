@@ -2,13 +2,11 @@ import SocialIcons from "../../components/SocialIcons";
 import Link from "next/link";
 import Image from "next/image";
 import { FaArrowLeft } from "react-icons/fa6";
+import fotoRelease from "./foto-release.jpg";
 
 export default function release() {
   return (
-    <div className="p-6 max-w-[1000px] mx-auto">
-      <h1 className="font-bold self-start">BLUE MARINHO</h1>
-      <small className="self-start">release</small>
-
+    <div className="text-left px-10">
       <h3 className="my-7 font-bold">
         Ecoando Clássicos com Originalidade: a Banda Blue Marinho oferece uma
         experiência única para os amantes do rock.
@@ -21,41 +19,39 @@ export default function release() {
         e 80.
       </p>
 
-      <div className="flex justify-center">
-        <Image
-          src="/pictures/galeria/foto-release.jpg"
-          width={500}
-          height={500}
-          alt="foto banda"
-        />
+      <div className="flex gap-4 mt-4 mb-8">
+        <div className="flex flex-wrap">
+          <Image src={fotoRelease} width={500} height={500} alt="foto banda" />
+        </div>
+        <div className="w-[50%]">
+          <p>
+            Apesar do setlist composto por acordes e notas familiares, os Blue
+            Marinho passam longe de uma atuação cover. Eles reinventam e
+            reinjetam energia em cada faixa, com arranjos próprios que
+            surpreendem o público. Imagine Nina Simone, Beatles e Stevie Wonder
+            fundindo-se em uma sinfonia de rock n roll envolvente.
+          </p>
+
+          <p className="my-7">
+            Paola Marinho, Felipe Campos, Fábio Tavares, Guilherme Braun e
+            Rafael Guerlak, não são apenas músicos talentosos, mas amigos de
+            longa data. A história da banda começou de forma despretensiosa, os
+            amigos se uniram para tocar no casamento da Paola e a brincadeira se
+            tornou um dos pontos altos da festa! De lá para cá e depois de
+            muitos feedbacks positivos, os amigos decidiram transformar a
+            brincadeira em coisa séria, dando origem a Blue Marinho.
+          </p>
+
+          <p className="my-7">
+            O show é capaz de preencher com maestria o espaço que o recebe,
+            levando o público a viajar por uma jornada musical que transcende
+            expectativas. Produtores de shows e amantes de uma boa música estão
+            convidados a testemunhar esse show de rock cheio de personalidade.
+          </p>
+        </div>
       </div>
 
-      <p className="my-7">
-        Apesar do setlist composto por acordes e notas familiares, os Blue
-        Marinho passam longe de uma atuação cover. Eles reinventam e reinjetam
-        energia em cada faixa, com arranjos próprios que surpreendem o público.
-        Imagine Nina Simone, Beatles e Stevie Wonder fundindo-se em uma sinfonia
-        de rock n roll envolvente.
-      </p>
-
-      <p className="my-7">
-        Paola Marinho, Felipe Campos, Fábio Tavares, Guilherme Braun e Rafael
-        Guerlak, não são apenas músicos talentosos, mas amigos de longa data. A
-        história da banda começou de forma despretensiosa, os amigos se uniram
-        para tocar no casamento da Paola e a brincadeira se tornou um dos pontos
-        altos da festa! De lá para cá e depois de muitos feedbacks positivos, os
-        amigos decidiram transformar a brincadeira em coisa séria, dando origem
-        a Blue Marinho.
-      </p>
-
-      <p className="my-7">
-        O show é capaz de preencher com maestria o espaço que o recebe, levando
-        o público a viajar por uma jornada musical que transcende expectativas.
-        Produtores de shows e amantes de uma boa música estão convidados a
-        testemunhar esse show de rock cheio de personalidade.
-      </p>
-
-      <div className="flex-start">
+      <div>
         <p className="py-1">Shows e mais informações, entre em contato com:</p>
         <p>Filipe: (21) 98844-4059</p>
         <p>Mari: (21) 99744-8621</p>
@@ -78,19 +74,13 @@ export default function release() {
 
       <div className="flex justify-center my-10 b-1">
         <iframe
-          width="560"
+          width="100%"
           height="315"
           src="https://www.youtube.com/embed/kd57l2z8Pz8?si=nXMj9Ox2HBOpHBaU"
           title="Blue Marinho YouTube"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
-      </div>
-
-      <div className="flex justify-center mt-10 text-slate-500">
-        <Link href={"/"}>
-          <FaArrowLeft size={30} />
-        </Link>
       </div>
     </div>
   );
