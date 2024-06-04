@@ -1,6 +1,6 @@
 import { FaInstagram, FaYoutube } from "react-icons/fa";
 
-export default function SocialIcons({ size }: any) {
+export default function SocialIcons({ size }) {
   return (
     <div className="flex">
       <a

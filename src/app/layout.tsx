@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Rock_Salt, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import Menu from "../components/Menu";
+import Footer from "../components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +21,14 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <main className="mx-auto text-center flex-col items-center justify-center max-w-[90%]">
+          <Menu />
+          {children}
+        </main>
+
+        <Footer />
+      </body>
     </html>
   );
 }

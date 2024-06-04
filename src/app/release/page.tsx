@@ -1,4 +1,4 @@
-import SocialIcons from "@/app/components/SocialIcons";
+import SocialIcons from "../../components/SocialIcons";
 import Link from "next/link";
 import Image from "next/image";
 import { FaArrowLeft } from "react-icons/fa6";
@@ -81,7 +81,7 @@ export default function release() {
           width="560"
           height="315"
           src="https://www.youtube.com/embed/kd57l2z8Pz8?si=nXMj9Ox2HBOpHBaU"
-          title="YouTube video player"
+          title="Blue Marinho YouTube"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
