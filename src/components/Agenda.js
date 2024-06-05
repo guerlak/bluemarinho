@@ -9,8 +9,8 @@ function Agenda() {
         <Evento
           local="Leblon-RJ"
           nome="La Carioca"
-          data={"07/06/2024"}
-          slug={"la-carioca"}
+          data="07/06/2024"
+          slug="la-carioca"
         />
       </div>
     </div>

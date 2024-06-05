@@ -4,22 +4,28 @@ import fotoRelease from "./foto-release.jpg";
 
 export default function release() {
   return (
-    <div className="text-left px-10">
+    <div className="text-left">
       <h3 className="font-bold">
         Ecoando Clássicos com Originalidade: a Banda Blue Marinho oferece uma
         experiência única para os amantes do rock.
       </h3>
       <small>release</small>
 
-      <p className="my-7">
+      <p className="my-10">
         Chega à cena carioca os Blue Marinho, um quinteto composto pela voz
         poderosa e envolvente de Paola Marinho e uma banda potente que apresenta
         uma rica mistura de releituras de clássicos do rock e blues dos anos 70
         e 80.
       </p>
 
-      <div className="flex flex-wrap gap-6 mt-4 mb-8">
-        <Image src={fotoRelease} width={500} height={500} alt="foto banda" />
+      <div className="flex flex-wrap items-center gap-6 mt-4 mb-8">
+        <Image
+          src={fotoRelease}
+          width={500}
+          height={500}
+          alt="foto banda"
+          className="rounded "
+        />
 
         <div className="sm:w-[50%]">
           <p>
@@ -29,8 +35,8 @@ export default function release() {
             surpreendem o público. Imagine Nina Simone, Beatles e Stevie Wonder
             fundindo-se em uma sinfonia de rock n roll envolvente.
           </p>
-
-          <p className="my-7">
+          <br></br>
+          <p>
             Paola Marinho, Felipe Campos, Fábio Tavares, Guilherme Braun e
             Rafael Guerlak, não são apenas músicos talentosos, mas amigos de
             longa data. A história da banda começou de forma despretensiosa, os
@@ -39,8 +45,8 @@ export default function release() {
             muitos feedbacks positivos, os amigos decidiram transformar a
             brincadeira em coisa séria, dando origem a Blue Marinho.
           </p>
-
-          <p className="my-7">
+          <br></br>
+          <p>
             O show é capaz de preencher com maestria o espaço que o recebe,
             levando o público a viajar por uma jornada musical que transcende
             expectativas. Produtores de shows e amantes de uma boa música estão
@@ -49,8 +55,8 @@ export default function release() {
         </div>
       </div>
 
-      <div>
-        <p className="py-1">Shows e mais informações, entre em contato com:</p>
+      <div className="lg:mt-4">
+        <p>Shows e mais informações, entre em contato com:</p>
         <p>Filipe: (21) 98844-4059</p>
         <p>Mari: (21) 99744-8621</p>
         <p>bandabluemarinho@gmail.com</p>
