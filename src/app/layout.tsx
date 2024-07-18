@@ -23,7 +23,7 @@ export default function RootLayout({
       </head>
       <body className={`flex min-h-screen flex-col ${inter.className}`}>
         <Menu />
-        <main className="flex-grow mx-auto text-center justify-content content-center">
+        <main className="flex-grow text-center justify-content content-center">
           {children}
         </main>
         <Footer />

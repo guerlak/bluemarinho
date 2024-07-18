@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Menu() {
   return (
-    <div className="flex justify-between items-center min-h-20 p-2 px-10">
+    <div className="flex justify-between items-center min-h-20 px-4 lg:px-10">
       <Link href={"/"}>
         <h1>Blue Marinho</h1>
       </Link>
