@@ -4,7 +4,7 @@ import fotoRelease from "./foto-release.jpg";
 
 export default function release() {
   return (
-    <div className="text-left">
+    <div className="text-left p-10">
       <h3 className="font-bold">
         Ecoando Clássicos com Originalidade: a Banda Blue Marinho oferece uma
         experiência única para os amantes do rock.

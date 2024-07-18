@@ -22,8 +22,8 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={inter.className}>
-        <main className="mx-auto text-center flex-col items-center justify-center max-w-[90%]">
-          <Menu />
+        <Menu />
+        <main className="mx-auto text-center flex-col items-center justify-center h-ldh">
           {children}
         </main>
 

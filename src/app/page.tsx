@@ -24,7 +24,7 @@ export default function Home() {
         className="w-full h-[300px] sm:h-[500px] bg-cover bg-center bg-no-repeat"
       ></header>
 
-      <div className="text-center flex-col items-center justify-center [&>*]:mb-10 mt-10">
+      <div className="text-center flex-col items-center justify-center [&>*]:mb-10 mt-10 p-2">
         <h2>
           Blue Marinho, um quinteto composto pela voz poderosa e envolvente de
           Paola Marinho e uma banda potente que apresenta uma rica mistura de

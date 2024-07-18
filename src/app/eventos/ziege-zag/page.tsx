@@ -5,7 +5,7 @@ import folder from "../media/la-carioca-folder.jpeg";
 const eventoPage = async () => {
   return (
     <div className="flex justify-center">
-      <Image src={folder} alt="folder la carioca" width={800} height={400} />
+      <h1>Em breve mais informações</h1>
     </div>
   );
 };
