@@ -7,8 +7,8 @@ function Agenda() {
       <br></br>
       <div className="flex-col justify-center mt-6">
         <Evento
-          local="Vargem Pequena-RJ"
-          nome="Ziege Zag Cervejaria"
+          local="V. Pequena-RJ"
+          nome="Ziege Zag"
           data="03/07/2024"
           slug="ziege-zag"
         />
@@ -20,7 +20,7 @@ function Agenda() {
         />
         <Evento
           local="Botafogo-RJ"
-          nome="Coordenadas Bar"
+          nome="Coordenadas"
           data="16/07/2024"
           slug="coordenadas"
         />
