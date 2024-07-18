@@ -21,12 +21,11 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={`flex min-h-screen flex-col ${inter.className}`}>
         <Menu />
-        <main className="mx-auto text-center flex-col items-center justify-center h-ldh">
+        <main className="flex-grow mx-auto text-center justify-content content-center">
           {children}
         </main>
-
         <Footer />
       </body>
     </html>
