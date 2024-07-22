@@ -1,6 +1,6 @@
 import { Rock_Salt } from "next/font/google";
-import fs from "fs";
-import Footer from "../components/Footer";
+
+import Banner from "../components/Banner";
 import Agenda from "../components/Agenda";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
@@ -8,23 +8,11 @@ import { FaArrowRight } from "react-icons/fa6";
 const rock = Rock_Salt({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
-  const imgFolder = "./public/pictures/home";
-  const pics: string[] = [];
-
-  fs.readdirSync(imgFolder).forEach((file) => {
-    pics.push("/pictures/home/" + file);
-  });
-
-  const selectedPic = Math.floor(Math.random() * pics.length);
-
   return (
     <>
-      <header
-        style={{ backgroundImage: `url(${pics[selectedPic]})` }}
-        className="w-full h-[300px] sm:h-[500px] bg-cover bg-center bg-no-repeat"
-      ></header>
+      <Banner />
 
-      <div className="text-center flex-col items-center justify-center [&>*]:mb-10 mt-10 p-2">
+      <section className="md:max-w-[1200px] flex-col items-center justify-center m-auto [&>*]:mb-10 mt-10 p-2">
         <h2>
           Blue Marinho, um quinteto composto pela voz poderosa e envolvente de
           Paola Marinho e uma banda potente que apresenta uma rica mistura de
@@ -62,7 +50,7 @@ export default function Home() {
           ></iframe>
         </div>
         <Agenda />
-      </div>
+      </section>
     </>
   );
 }

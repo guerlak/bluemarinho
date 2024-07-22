@@ -1,29 +1,42 @@
 import Evento from "../components/Evento";
+import data from "../../data";
 
 function Agenda() {
+  const data = [
+    {
+      local: "V. Pequena-RJ",
+      nome: "Ziege Zag",
+      data: "03/07",
+      slug: "ziege-zag",
+    },
+    {
+      local: "São Conrado-RJ",
+      nome: "Quiqui",
+      data: "10/07",
+      slug: "quiqui",
+    },
+    {
+      local: "Botafogo-RJ",
+      nome: "Coordenadas",
+      data: "16/07",
+      slug: "coordenadas",
+    },
+  ];
+
   return (
     <div>
       <h1>PRÓXIMOS SHOWS</h1>
       <br></br>
       <div className="flex-col justify-center mt-6">
-        <Evento
-          local="V. Pequena-RJ"
-          nome="Ziege Zag"
-          data="03/07/2024"
-          slug="ziege-zag"
-        />
-        <Evento
-          local="São Conrado-RJ"
-          nome="Quiqui"
-          data="10/07/2024"
-          slug="quiqui"
-        />
-        <Evento
-          local="Botafogo-RJ"
-          nome="Coordenadas"
-          data="16/07/2024"
-          slug="coordenadas"
-        />
+        {data.map((evento) => (
+          <Evento
+            slug={evento.slug}
+            nome={evento.nome}
+            data={evento.data}
+            local={evento.local}
+            key={evento.slug}
+          />
+        ))}
       </div>
     </div>
   );
