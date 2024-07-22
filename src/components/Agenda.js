@@ -6,19 +6,19 @@ function Agenda() {
     {
       local: "V. Pequena-RJ",
       nome: "Ziege Zag",
-      data: "03/07",
+      data: "03/08",
       slug: "ziege-zag",
     },
     {
       local: "São Conrado-RJ",
       nome: "Quiqui",
-      data: "10/07",
+      data: "10/08",
       slug: "quiqui",
     },
     {
       local: "Botafogo-RJ",
       nome: "Coordenadas",
-      data: "16/07",
+      data: "16/08",
       slug: "coordenadas",
     },
   ];
