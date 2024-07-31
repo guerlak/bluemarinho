@@ -1,11 +1,5 @@
 [
   {
-    "local": "V. Pequena-RJ",
-    "nome": "Ziege Zag",
-    "data": "03/08",
-    "slug": "ziege-zag"
-  },
-  {
     "local": "São Conrado-RJ",
     "nome": "Quiqui",
     "data": "10/08",
@@ -16,5 +10,11 @@
     "nome": "Coordenadas",
     "data": "16/08",
     "slug": "coordenadas"
+  },
+  {
+    "local": "V. Pequena-RJ",
+    "nome": "Ziege Zag",
+    "data": "24/08",
+    "slug": "ziege-zag"
   }
 ]
