@@ -1,11 +1,8 @@
-import fs from "node:fs";
-
 import bannerPic from "./pictures/guitars.jpeg";
 
 export default function Banner() {
   const imgFolder = "public/pictures/home";
 
-  console.log(imgFolder);
   const pics = [];
 
   const selectedPic = Math.floor(Math.random() * pics.length);

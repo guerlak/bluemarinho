@@ -1,34 +1,18 @@
 import Evento from "../components/Evento";
-import data from "../../data";
 
-function Agenda() {
-  const data = [
-    {
-      local: "V. Pequena-RJ",
-      nome: "Ziege Zag",
-      data: "03/08",
-      slug: "ziege-zag",
-    },
-    {
-      local: "São Conrado-RJ",
-      nome: "Quiqui",
-      data: "10/08",
-      slug: "quiqui",
-    },
-    {
-      local: "Botafogo-RJ",
-      nome: "Coordenadas",
-      data: "16/08",
-      slug: "coordenadas",
-    },
-  ];
+import { promises as fs } from "fs";
+
+async function Agenda() {
+  const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
+
+  const dataJson = JSON.parse(file);
 
   return (
     <div>
       <h1>PRÓXIMOS SHOWS</h1>
       <br></br>
       <div className="flex-col justify-center mt-6">
-        {data.map((evento) => (
+        {dataJson.map((evento) => (
           <Evento
             slug={evento.slug}
             nome={evento.nome}
