@@ -21,7 +21,13 @@ export default function Banner() {
       }}
       className="w-full h-[500px] sm:h-[500px] bg-cover bg-center bg-no-repeat flex justify-center items-center"
     >
-      <Image src={logo} height={300} fill={false} style={{ width: "80%" }} />
+      <Image
+        src={logo}
+        height={300}
+        fill={false}
+        style={{ width: "80%" }}
+        alt="Blue Marinho Logo"
+      />
     </header>
   );
 }

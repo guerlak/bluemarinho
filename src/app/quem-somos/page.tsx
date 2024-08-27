@@ -25,13 +25,13 @@ export default function QuemSomos() {
       </p>
       <h2 className="text-2xl my-6">O Que Nos Define</h2>
       <ul>
-        <li> 🎸 Cinco amigos unidos pela música</li>
+        <li>- Cinco amigos unidos pela música</li>
         <li>
-          🎵 Versões e arranjos com dose extra de energia e personalidade para
-          clássicos atemporais;
+          - Versões e arranjos com dose extra de energia e personalidade para
+          clássicos atemporais
         </li>
-        <li>⚡ Energia contagiante em cada apresentação;</li>
-        <li>🎶 Repertório diversificado e potente;</li>
+        <li>- Energia contagiante em cada apresentação</li>
+        <li>- Repertório diversificado e potente</li>
       </ul>
 
       <h2 className="text-2xl my-6">Nosso Repertório</h2>
@@ -39,7 +39,7 @@ export default function QuemSomos() {
         A Blue Marinho navega por um vasto oceano musical, trazendo o melhor de
         diferentes épocas e estilos. Dos Beatles ao White Stripes, dos Mutantes
         à Nina Simone, do blues clássico ao rock contemporâneo. O repertório
-        passa por Led Zeppelin, Stevie Wonder, Guns N' Roses, Jet, The Animals,
+        passa por Led Zeppelin, Stevie Wonder, Guns N Roses, Jet, The Animals,
         Cazuza, Janis Joplin e muito mais.
       </p>
       <h2 className="text-2xl my-6">Nossa Missão</h2>
