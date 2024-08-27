@@ -20,9 +20,9 @@ export default function Home() {
         </h2>
 
         <div className="flex items-center justify-center text-2xl ">
-          <Link href={"/release"}>
+          <Link href={"/quem-somos"}>
             <div className="flex hover:opacity-50 items-center border rounded-sm p-3">
-              <span className="mx-1 ">Ver release</span>
+              <span className="mx-1 ">Quem Somos</span>
               <FaArrowRight />
             </div>
           </Link>

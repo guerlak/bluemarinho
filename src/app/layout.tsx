@@ -22,7 +22,6 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className={`flex min-h-screen flex-col ${inter.className}`}>
-        <Menu />
         <main className="flex-grow text-center justify-content content-center">
           {children}
         </main>
