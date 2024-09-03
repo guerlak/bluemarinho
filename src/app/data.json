@@ -1,8 +1,14 @@
 [
   {
-    "local": "Leblon-RJ",
-    "nome": "La Carioca",
-    "data": "01/09",
-    "slug": "laca"
+    "local": "Humaitá-RJ",
+    "nome": "Macaco Caolho",
+    "data": "05/09",
+    "slug": "macaco"
+  },
+  {
+    "local": "Vargem Pequena-RJ",
+    "nome": "Ziege Zague",
+    "data": "14/09",
+    "slug": "zz"
   }
 ]
