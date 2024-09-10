@@ -1,4 +1,3 @@
-import SocialIcons from "../../components/SocialIcons";
 import Image from "next/image";
 import fotoRelease from "./foto-release.jpg";
 
@@ -62,10 +61,6 @@ export default function release() {
         <p>bandabluemarinho@gmail.com</p>
       </div>
 
-      <br />
-
-      <p className="my-1">Siga-nos nas redes sociais:</p>
-      <SocialIcons size={40} />
       <br />
 
       <q>

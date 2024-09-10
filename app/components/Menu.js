@@ -1,4 +1,4 @@
-import SocialIcons from "../components/SocialIcons";
+import SocialIcons from "../SocialIcons";
 import Link from "next/link";
 
 export default function Menu() {

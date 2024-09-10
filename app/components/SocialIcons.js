@@ -7,7 +7,7 @@ export default function SocialIcons({ size }) {
         href="https://www.youtube.com/@BlueMarinho"
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2"
+        className="p-3"
       >
         <FaYoutube size={size} />
       </a>
@@ -15,7 +15,7 @@ export default function SocialIcons({ size }) {
         href="https://www.instagram.com/bandabluemarinho/"
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2"
+        className="p-3"
       >
         {" "}
         <FaInstagram size={size} />

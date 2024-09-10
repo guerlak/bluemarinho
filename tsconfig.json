@@ -26,8 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/SocialIcons.js",
-    "src/components/Footer.js",
+    "components/SocialIcons.js",
+    "components/Footer.js",
     ".next/types/app/eventos/[slug]/page.js"
   ],
   "exclude": ["node_modules"]

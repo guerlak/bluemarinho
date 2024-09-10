@@ -1,11 +1,18 @@
-import Evento from "../components/Evento";
+import Evento from "./Evento";
 
 import { promises as fs } from "fs";
 
 async function Agenda() {
-  const file = await fs.readFile(process.cwd() + "/src/app/data.json", "utf8");
+  // data from file
+  //const file = await fs.readFile(process.cwd() + "/app/data.json", "utf8");
 
-  const dataJson = JSON.parse(file);
+  const data = await fetch("http://localhost:3000/api/events", {
+    cache: "no-store",
+  });
+
+  const dataJson = await data.json();
+
+  //console.log("dataJson", dataJson);
 
   return (
     <div>
@@ -19,6 +26,7 @@ async function Agenda() {
             data={evento.data}
             local={evento.local}
             key={evento.slug}
+            url={evento.url}
           />
         ))}
       </div>

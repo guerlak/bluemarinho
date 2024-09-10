@@ -1,7 +1,7 @@
 import { Rock_Salt } from "next/font/google";
 
-import Banner from "../components/Banner";
-import Agenda from "../components/Agenda";
+import Banner from "./components/Banner";
+import Agenda from "./components/Agenda";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 
