@@ -1,11 +1,9 @@
-import Link from "next/link";
-import { FaRegRegistered } from "react-icons/fa6";
 import SocialIcons from "./SocialIcons";
 
 export default function Footer() {
   return (
-    <div className="flex justify-around items-center my-10 flex-col sm:flex-row ">
-      <SocialIcons size={50} className="w-80" />
+    <div className="flex items-center justify-around my-10 flex-col sm:flex-row ">
+      <SocialIcons size={50} />
 
       <div className="mt-4">
         <div className="text-center text-gray-300">

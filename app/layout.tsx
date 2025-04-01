@@ -21,10 +21,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
-      <body className={`flex min-h-screen flex-col ${inter.className}`}>
-        <main className="flex-grow text-center justify-content content-center">
-          {children}
-        </main>
+      <body className={`flex min-h-screen flex-col ${inter.className}  `}>
+        {children}
         <Footer />
       </body>
     </html>

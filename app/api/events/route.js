@@ -1,13 +1,13 @@
 import { NextResponse } from "next/server";
 
-export async function GET(req) {
+export async function GET() {
   const data = [
     {
-      local: "Vg. Pequena-RJ",
-      nome: "ZZ Festival",
-      data: "26/10",
-      slug: "zz-festival",
-      url: "https://shotgun.live/festivals/zz-fest-primavera?utm_source=blue-marinho",
+      local: "São Conrado-RJ",
+      nome: "Quiqui",
+      data: "26/04",
+      slug: "quiqui",
+      url: "https://www.instagram.com/quiquirio/",
     },
   ];
 

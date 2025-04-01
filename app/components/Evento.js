@@ -1,4 +1,4 @@
-import Link from "next/link";
+
 
 export default function Evento({ data, local, nome, slug, url }) {
   return (

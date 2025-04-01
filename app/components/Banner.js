@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import bannerPic from "./pictures/guitars.jpeg";
-import logo from "./pictures/logo3.png";
+import bannerPic from "../../public/pictures/home/guitars.jpeg";
+
+import logo from "../../public/pictures/logo3.png";
 
 export default function Banner() {
   const imgFolder = "public/pictures/home";
@@ -15,11 +16,11 @@ export default function Banner() {
   //});
 
   return (
-    <header
+    <div
       style={{
         backgroundImage: `url(${bannerPic.src})`,
       }}
-      className="w-full h-[500px] sm:h-[500px] bg-cover bg-center bg-no-repeat flex justify-center items-center"
+      className="sm:h-[500px] bg-cover bg-center bg-no-repeat flex justify-center items-center"
     >
       <Image
         src={logo}
@@ -28,6 +29,6 @@ export default function Banner() {
         style={{ width: "80%" }}
         alt="Blue Marinho Logo"
       />
-    </header>
+    </div>
   );
 }
