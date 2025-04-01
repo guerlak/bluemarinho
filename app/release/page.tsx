@@ -1,5 +1,4 @@
-import Image from "next/image";
-import fotoRelease from "./foto-release.jpg";
+
 
 export default function release() {
   return (
@@ -18,13 +17,7 @@ export default function release() {
       </p>
 
       <div className="flex flex-wrap items-center gap-6 mt-4 mb-8">
-        <Image
-          src={fotoRelease}
-          width={500}
-          height={500}
-          alt="foto banda"
-          className="rounded "
-        />
+
 
         <div className="sm:w-[50%]">
           <p>
