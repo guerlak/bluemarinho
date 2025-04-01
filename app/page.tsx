@@ -3,19 +3,16 @@ import Banner from "./components/Banner";
 import Agenda from "./components/Agenda";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
+import Header from "./ui/Header";
 
 const rock = Rock_Salt({ weight: "400", subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="justify-center flex flex-col items-center m-auto">
-      <header>
-        <Banner />
-      </header >
+    <div>    <Header />
+      <main className="flex flex-col text-center gap-10 max-w-[1200px] mx-auto px-4 mt-10">
 
-      <main className="flex-grow text-center ">
-
-        <section className="md:max-w-[1200px] flex-col items-center justify-center m-auto [&>*]:mb-10 mt-10 p-2">
+        <section className="flex flex-col items-center gap-10">
           <h2>
             Blue Marinho, um quinteto composto pela voz poderosa de Paola Marinho
             e uma banda potente que apresenta uma rica mistura de releituras de
@@ -58,5 +55,6 @@ export default function Home() {
 
       </main>
     </div>
+
   );
 }

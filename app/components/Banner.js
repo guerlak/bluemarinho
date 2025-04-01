@@ -20,13 +20,13 @@ export default function Banner() {
       style={{
         backgroundImage: `url(${bannerPic.src})`,
       }}
-      className="sm:h-[500px] bg-cover bg-center bg-no-repeat flex justify-center items-center"
+      className="flex bg-cover bg-center bg-no-repeat justify-center items-center h-[500px] w-full"
     >
       <Image
         src={logo}
         height={300}
         fill={false}
-        style={{ width: "80%" }}
+        style={{ width: "80%", maxHeight: "400px" }}
         alt="Blue Marinho Logo"
       />
     </div>
