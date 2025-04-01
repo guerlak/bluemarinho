@@ -6,7 +6,7 @@ async function Agenda() {
   // data from file
   //const file = await fs.readFile(process.cwd() + "/app/data.json", "utf8");
 
-  const data = await fetch("http://localhost:3000/api/events", {
+  const data = await fetch("http://bluemarinho.com.br/api/events", {
     next: { revalidate: 60 },
     cache: "no-store",
   });
