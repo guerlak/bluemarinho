@@ -6,14 +6,14 @@ async function Agenda() {
   // data from file
   //const file = await fs.readFile(process.cwd() + "/app/data.json", "utf8");
 
-  const data = await fetch("http://bluemarinho.com.br/api/events", {
-    next: { revalidate: 60 },
+
+  const data = await fetch(process.env.URL, {
     cache: "no-store",
   });
 
   const dataJson = await data.json();
 
-  console.log("dataJson", dataJson);
+  // console.log("dataJson", dataJson);
 
   return (
     <div>

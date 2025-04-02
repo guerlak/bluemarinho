@@ -10,7 +10,6 @@ export default function QuemSomos() {
 
       <h1 className="text-4xl my-4">Blue Marinho</h1>
 
-
       <div className="gap-7 flex flex-col mt-14">
         <h2 className="text-2xl">
           A Energia do Rock e Blues em versões únicas

@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="flex items-center justify-around my-10 flex-col sm:flex-row ">
       <SocialIcons size={50} />
 
-      <div className="mt-4">
+      <div className="mt-20">
         <div className="text-center text-gray-300">
           <p>CONTATO PARA SHOWS</p>
           <p>Filipe: (21) 98844-4059</p>

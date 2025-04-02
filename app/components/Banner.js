@@ -20,7 +20,7 @@ export default function Banner() {
       style={{
         backgroundImage: `url(${bannerPic.src})`,
       }}
-      className="flex bg-cover bg-center bg-no-repeat justify-center items-center h-[500px] w-full"
+      className="flex bg-cover bg-center bg-no-repeat justify-center items-center h-[500px] max-w-screen-xl mx-auto"
     >
       <Image
         src={logo}

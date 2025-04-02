@@ -2,11 +2,11 @@
 
 export default function Evento({ data, local, nome, slug, url }) {
   return (
-    <div className="w-[22em] m-auto">
-      <a href={url} target="blank">
-        <div className="border p-4 rounded-md mt-8 flex divide-x-2 justify-center">
-          <div className="text-orange-400">{data}</div>
-          <div className="ml-2 px-2">
+    <div className="w-[500px] m-auto">
+      <a href={url} target="blank" className="max-w-md m-auto">
+        <div className="border p-4 rounded-md mt-8 flex">
+          <div className="text-orange-400 w-[140px] text-center border-r-2 p-2">{data}</div>
+          <div className="w-[400px] flex justify-center items-center text-center">
             {nome}, {local}
           </div>
         </div>
