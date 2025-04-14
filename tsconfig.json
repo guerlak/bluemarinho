@@ -35,7 +35,7 @@
     "components/SocialIcons.js",
     "components/Footer.js",
     ".next/types/app/eventos/[slug]/page.js",
-    "app/ui/Header.js"
+    "app/ui/Header.tsx"
   ],
   "exclude": [
     "node_modules"

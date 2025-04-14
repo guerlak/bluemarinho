@@ -1,4 +1,4 @@
-import { FaSquareInstagram } from "react-icons/fa6";
+import { FaHandPointRight } from "react-icons/fa6";
 
 
 const eventoPage = async ({ params }: any) => {
@@ -20,15 +20,14 @@ const eventoPage = async ({ params }: any) => {
       <div>
         <div className="text-2xl">{evento.local}</div>
         <div className="text-2xl">{evento.endereco}</div>
-
       </div>
       <div className="text-xl">{evento.descricao}</div>
 
-      <a className="underline" href={evento.url_evento} target="_blank">
-        {evento.url_evento}
+      <a className="underline flex " href={evento.url_evento} target="_blank">
+        /{evento.nome}
       </a>
     </div>
   )
 }
 
-export default eventoPage;
+export default eventoPage
