@@ -1,4 +1,4 @@
-const urlLocal = process.env.NEXT_PUBLIC_URL_LOCAL || "http://localhost:3000";
+
 
 export const data = [
     {
@@ -12,7 +12,6 @@ export const data = [
         slug: "25-04-25",
         endereco: "Rua Almirante Gonçalves 100",
         url_evento: "https://www.instagram.com/macacocaolhopub/",
-        url: `${urlLocal}/eventos/25-04-25`,
         descricao: "O Macaco Caolho é um bar e restaurante localizado em Botafogo, no Rio de Janeiro. O local é conhecido por sua decoração rústica e aconchegante, além de oferecer uma variedade de pratos e bebidas.",
     },
     {
@@ -25,7 +24,6 @@ export const data = [
         }),
         slug: "26-04-25",
         endereco: "Rua Almirante Gonçalves 100",
-        url: `${urlLocal}/eventos/26-04-25`,
         url_evento: "https://www.instagram.com/quiquirio/",
         descricao: "O Quiqui é um evento de música e arte que acontece em São Conrado, no Rio de Janeiro. O evento conta com apresentações de artistas locais e nacionais, além de exposições de arte e gastronomia.",
     },
@@ -40,7 +38,6 @@ export const data = [
         slug: "10-05-25",
         endereco: "Rua Almirante Gonçalves 100",
         url_evento: "https://www.instagram.com/grillorestaurante/",
-        url: `${urlLocal}/eventos/10-05-25`,
         descricao: "Breve mais informações.",
 
     },
@@ -55,7 +52,6 @@ export const data = [
         slug: "18-05-25",
         endereco: "Rua Almirante Gonçalves 100",
         url_evento: "",
-        url: `${urlLocal}/eventos/18-05-25`,
         descricao: "Breve mais informações.",
 
     },
@@ -70,7 +66,6 @@ export const data = [
         slug: "24-05-25",
         endereco: "Rua Almirante Gonçalves 100",
         url_evento: "https://www.instagram.com/ziegezag/",
-        url: `${urlLocal}/eventos/24-05-25`,
         descricao: "Breve mais informações.",
     },
 ];

@@ -5,7 +5,7 @@ const eventoPage = async ({ params }: any) => {
 
   const { slug } = params
 
-  const data = await fetch(`http://localhost:3000/api/eventos/${slug}`, {
+  const data = await fetch(`${process.env.HOST}/api/eventos/${slug}`, {
     cache: "no-store",
   });
 
