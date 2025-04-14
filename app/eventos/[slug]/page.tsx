@@ -24,8 +24,8 @@ const eventoPage = async ({ params }: any) => {
       </div>
       <div className="text-xl">{evento.descricao}</div>
 
-      <a href={evento.url_evento} target="_blank">
-        <FaSquareInstagram size={50} />
+      <a className="underline" href={evento.url_evento} target="_blank">
+        {evento.url_evento}
       </a>
     </div>
   )
