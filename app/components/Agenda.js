@@ -7,7 +7,7 @@ async function Agenda() {
   //const file = await fs.readFile(process.cwd() + "/app/data.json", "utf8");
 
 
-  const data = await fetch(process.env.URL, {
+  const data = await fetch(`${process.env.URL_LOCAL}/api/eventos`, {
     cache: "no-store",
   });
 
